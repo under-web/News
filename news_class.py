@@ -62,4 +62,35 @@ class FastTG:
         else:
             pass
         return r.text
+
+
 # TODO: написать класс для извлечения данных из html страницы (title, time, links ) через try except
+
+class Sceleton:
+
+    def scraping_page(self, html, tag_time, class_time, tag_title, class_title, tag_link, class_link):
+        global tm, tt, lk
+
+        # self.html = html
+        # self.tag_time = tag_time
+        # self.class_time = class_time
+        # self.tag_title = tag_title
+        # self.class_title = class_title
+        # self.tag_link = tag_link
+        # self.class_link = class_link
+
+        for i in html:
+            try:
+                tm = i.find(tag_time, class_='{}'.format(class_time)).text
+                print(tm)
+            except Exception:
+                tm = '0'
+            try:
+                tt = i.find(tag_title, class_='{}'.format(class_title)).text
+            except Exception:
+                tt = '1'
+            try:
+                lk = i.find(tag_link, class_='{}'.format(class_link)).get('href')
+            except Exception:
+                lk = '2'
+            print(tm, tt, lk)
