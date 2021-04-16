@@ -437,3 +437,28 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1618516060328	Marionette	INFO	Listening on port 42649
 1618516060414	Marionette	WARN	TLS certificate errors will be ignored for this session
 1618516070448	Marionette	INFO	Stopped listening on port 42649
+1618596891609	geckodriver	INFO	Listening on 127.0.0.1:36443
+1618596891658	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileipiuOB"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618596897487	Marionette	INFO	Listening on port 39773
+1618596897622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618596898856	Marionette	INFO	Stopped listening on port 39773
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618596914212	geckodriver	INFO	Listening on 127.0.0.1:42719
+1618596914220	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileic5czL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618596918401	Marionette	INFO	Listening on port 39059
+1618596918518	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618596919044	Marionette	INFO	Stopped listening on port 39059
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618596926726	geckodriver	INFO	Listening on 127.0.0.1:54787
+1618596926735	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1b7ouv"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618596930691	Marionette	INFO	Listening on port 35595
+1618596930849	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1618596940574	Marionette	INFO	Stopped listening on port 35595

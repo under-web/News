@@ -1,7 +1,7 @@
-
 class FastTG:
     '''Класс для работы с динамическими агрегаторами телеграма'''
-    def get_news(self, url='https://tgstat.ru/posts'):
+
+    def get_news_tg(self, url='https://tgstat.ru/posts'):
         import time
         from bs4 import BeautifulSoup
         from selenium import webdriver
@@ -46,7 +46,20 @@ class FastTG:
                 tg_links = ''
             print(time, '[{}]'.format(views), tg_links, title_text)
 
+    def get_html_page(self, url, vie=False):
+        """
+        Возвращает html страницы
+        vie - выводит в консоль результат метода
+        """
+        import requests
+        from fake_useragent import UserAgent
 
-if __name__ == '__main__':
-    l = FastTG()
-    l.get_news()
+        ua = UserAgent()
+        fake_ua = ua.chrome
+        r = requests.get(url, headers={'User-Agent': fake_ua})
+        if vie:
+            print(r.text)
+        else:
+            pass
+        return r.text
+# TODO: написать класс для извлечения данных из html страницы (title, time, links ) через try except
