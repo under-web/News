@@ -1,7 +1,8 @@
-class FastTG:
+class FastPostman:
     '''Класс для работы с динамическими агрегаторами телеграма'''
 
-    def get_news_tg(self, url='https://tgstat.ru/posts'):
+    @classmethod
+    def get_news_tg(self, url='https://tgstat.ru/posts', pause=5):
         import time
         from bs4 import BeautifulSoup
         from selenium import webdriver
@@ -9,7 +10,7 @@ class FastTG:
         try:
             driver = webdriver.Firefox(timeout=4)
             driver.get(url)
-            time.sleep(3)
+            time.sleep(pause)
             main_page = driver.page_source
         except ConnectionRefusedError:
             print('Проблема с соединением')
@@ -46,6 +47,7 @@ class FastTG:
                 tg_links = ''
             print(time, '[{}]'.format(views), tg_links, title_text)
 
+    @classmethod
     def get_html_page(self, url, vie=False):
         """
         Возвращает html страницы
@@ -56,41 +58,31 @@ class FastTG:
 
         ua = UserAgent()
         fake_ua = ua.chrome
-        r = requests.get(url, headers={'User-Agent': fake_ua})
+        r = requests.get(url, headers={'User-Agent': fake_ua}, timeout=5)
         if vie:
             print(r.text)
         else:
             pass
         return r.text
 
-
-# TODO: написать класс для извлечения данных из html страницы (title, time, links ) через try except
+# TODO: решить проблему с некорректным запуском методов через if или try
+# TODO: отредактировать Sceleton добавить возможность сохранения в файл
+# TODO: отредактировать Sceleton добавить возможность опционального выбора тегов(что парсить конкретно ссылки например)
 
 class Sceleton:
-
+    @classmethod
     def scraping_page(self, html, tag_time, class_time, tag_title, class_title, tag_link, class_link):
-        global tm, tt, lk
-
-        # self.html = html
-        # self.tag_time = tag_time
-        # self.class_time = class_time
-        # self.tag_title = tag_title
-        # self.class_title = class_title
-        # self.tag_link = tag_link
-        # self.class_link = class_link
-
         for i in html:
             try:
                 tm = i.find(tag_time, class_='{}'.format(class_time)).text
-                print(tm)
             except Exception:
-                tm = '0'
+                tm = ''
             try:
                 tt = i.find(tag_title, class_='{}'.format(class_title)).text
             except Exception:
-                tt = '1'
+                tt = ''
             try:
                 lk = i.find(tag_link, class_='{}'.format(class_link)).get('href')
             except Exception:
-                lk = '2'
+                lk = ''
             print(tm, tt, lk)

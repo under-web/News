@@ -462,3 +462,66 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1618596930849	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
 1618596940574	Marionette	INFO	Stopped listening on port 35595
+1618619220102	geckodriver	INFO	Listening on 127.0.0.1:39833
+1618619221101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXMvSIL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618619225434	Marionette	INFO	Listening on port 36629
+1618619225570	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618619227848	Marionette	INFO	Stopped listening on port 36629
+1618619235508	geckodriver	INFO	Listening on 127.0.0.1:42389
+1618619235516	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebEwO2q"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618619239563	Marionette	INFO	Listening on port 45483
+1618619239667	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1618619249426	Marionette	INFO	Stopped listening on port 45483
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618619303991	geckodriver	INFO	Listening on 127.0.0.1:51231
+1618619303998	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileL238uH"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618619307959	Marionette	INFO	Listening on port 33493
+1618619308066	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618619319245	Marionette	INFO	Stopped listening on port 33493
+1618619364502	geckodriver	INFO	Listening on 127.0.0.1:54563
+1618619364511	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLatkve"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618619368418	Marionette	INFO	Listening on port 40023
+1618619368465	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1618619368975	Marionette	INFO	Stopped listening on port 40023
+1618619372151	geckodriver	INFO	Listening on 127.0.0.1:60867
+1618619372159	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1Njy4K"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618619376181	Marionette	INFO	Listening on port 32817
+1618619376308	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1618619391537	Marionette	INFO	Stopped listening on port 32817
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618620135521	geckodriver	INFO	Listening on 127.0.0.1:49787
+1618620135530	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRhsKEt"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1618620139725	Marionette	INFO	Listening on port 34441
+1618620139795	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1618620140987	Marionette	INFO	Stopped listening on port 34441
+console.warn: services.settings: main/cfr-fxa sync interrupted by shutdown
+1618620146269	geckodriver	INFO	Listening on 127.0.0.1:52031
+1618620146277	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileI9JSOK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618620150120	Marionette	INFO	Listening on port 46083
+1618620150231	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1618620150690	Marionette	INFO	Stopped listening on port 46083
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
